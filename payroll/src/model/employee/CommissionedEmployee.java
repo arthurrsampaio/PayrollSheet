@@ -20,7 +20,7 @@ public class CommissionedEmployee extends Employee {
         double salary,
         double commission
     ) {
-        super(name, address, paymentMethod, DefaultPaymentSchedules.WEEKLY_EVERY_TWO_FRIDAYS, Type.SALARIED);
+        super(name, address, paymentMethod, DefaultPaymentSchedules.WEEKLY_EVERY_TWO_FRIDAYS, Type.COMMISSIONED);
         this.salary = salary;
         this.commission = commission;
         this.sales = new ArrayList<>();
