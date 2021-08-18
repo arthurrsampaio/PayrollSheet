@@ -29,7 +29,11 @@ public final class EditEmployeeConsole extends BaseConsole {
 
             print("-> Type if it's on syndicate (yes/no): ");
             String isOnSyndicateText = scanner.nextLine();
-            boolean isOnSyndicate = isOnSyndicateText.equals("yes");
+            boolean isOnSyndicate = false;
+            
+            if(isOnSyndicateText.equals("yes")) {
+            	isOnSyndicate = true;
+            }
 
             double syndicateFee = 0;
             if (isOnSyndicate) {
